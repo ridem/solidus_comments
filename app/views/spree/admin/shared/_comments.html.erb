@@ -21,7 +21,7 @@
             <% if @comment_types.present? %>
               <div class="field">
                 <%= f.label :comment_type_id, Spree.t(:type) %>
-                <%= f.select :comment_type_id, @comment_types.map{|ct| [ct.name, ct.id]},{} ,:class => 'fullwidth' %>
+                <%= f.select :comment_type_id, @comment_types.map{|ct| [ct.name, ct.id]},{} ,:class => 'select2 fullwidth' %>
               </div>
             <% end %>
             <div class="field">

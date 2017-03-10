@@ -5,6 +5,7 @@ en:
     for: for
     none: None
     comments: Comments
+    commenter: Commenter
     comments_count: Comments (%{count})
     comment: Comment
     add_comment: Add Comment
