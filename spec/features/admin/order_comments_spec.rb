@@ -7,7 +7,7 @@ RSpec.feature 'Order Comments', :js do
     login_as_admin
   end
 
-  it "adding comments" do
+  it 'adding comments' do
     visit spree.comments_admin_order_path(order)
     expect(page).to have_text(/No Comments found/i)
 

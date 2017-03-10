@@ -1,12 +1,12 @@
 
-#map.namespace :admin do |admin|
+# map.namespace :admin do |admin|
 #  admin.resources :comments
 #  admin.resources :comment_types
 #
 #  admin.resources :orders, :member => {:comments => :get} do |order|
 #    order.resources :shipments, :member => {:comments => :get}
 #  end
-#end
+# end
 #
 
 Spree::Core::Engine.routes.draw do
@@ -21,12 +21,12 @@ Spree::Core::Engine.routes.draw do
 
       resources :shipments do
         member do
-         get :comments
-       end
+          get :comments
+        end
       end
     end
   end
 
-#match '/admin/comments' => 'admin/comments', :via => [:get, :post]
-#  match '/admin/comment_types' => 'admin/comment_types', :via => [:get, :post]
+  # match '/admin/comments' => 'admin/comments', :via => [:get, :post]
+  #  match '/admin/comment_types' => 'admin/comment_types', :via => [:get, :post]
 end

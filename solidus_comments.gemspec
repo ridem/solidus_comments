@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.summary   = 'Adds comments to the solidus admin'
   s.required_ruby_version = '>= 2.1'
 
-  s.author    =  [ 'Rails Dog', 'Solidus Contrib' ]
+  s.author = ['Rails Dog', 'Solidus Contrib']
   s.email     = 'contact+comments@solidus.io'
   s.homepage  = 'https://github.com/solidusio-contrib/solidus_comments'
 
