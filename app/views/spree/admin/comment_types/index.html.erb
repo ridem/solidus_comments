@@ -39,7 +39,7 @@
     </tbody>
   </table>
 <% else %>
-  <div class="alpha twelve columns no-objects-found">
+  <div class="col-xs-12 no-objects-found">
     <%= Spree.t(:no_resource_found, resource: I18n.t(:comment_types, scope: 'spree')) %>,
     <%= link_to Spree.t(:add_one), spree.new_admin_comment_type_path %>!
   </div>

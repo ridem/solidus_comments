@@ -1,7 +1,7 @@
 <% if commentable.comments.any? %>
   <%= render 'spree/admin/shared/comment_list', :commentable => commentable %>
 <% else %>
-  <div class="alpha twelve columns no-objects-found">
+  <div class="col-xs-12 no-objects-found">
     <%= Spree.t(:no_resource_found, resource: I18n.t(:comments, scope: 'spree')) %>
   </div>
 <% end %>
@@ -17,14 +17,14 @@
         <legend align="center"><%= Spree.t(:add_comment) %></legend>
 
         <div data-hook="comment_fields" class="row">
-          <div class="alpha twelve columns">
+          <div class="col-xs-12">
             <% if @comment_types.present? %>
-              <div class="field">
+              <div class="form-group">
                 <%= f.label :comment_type_id, Spree.t(:type) %>
                 <%= f.select :comment_type_id, @comment_types.map{|ct| [ct.name, ct.id]},{} ,:class => 'select2 fullwidth' %>
               </div>
             <% end %>
-            <div class="field">
+            <div class="form-group">
               <%= f.label :comment, Spree.t(:comment) %>
               <%= f.text_area :comment, :style => 'height:150px;', :class => 'fullwidth' %>
             </div>
