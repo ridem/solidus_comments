@@ -16,7 +16,7 @@
       <fieldset class="index no-border-bottom">
         <legend align="center"><%= Spree.t(:add_comment) %></legend>
 
-        <div data-hook="comment_fields" class="row">
+        <div data-hook="comment_fields">
           <div class="col-xs-12">
             <% if @comment_types.present? %>
               <div class="form-group">
@@ -35,7 +35,9 @@
       <div class="clear"></div>
 
       <div class="form-buttons filter-actions actions" data-hook="buttons">
-        <%= button Spree.t(:add_comment), 'icon-arrow-right' %>
+        <%= button_tag type: 'submit', class: 'btn btn-primary' do %>
+          <i class="fa fa-add"></i>Add comment
+        <% end %>
       </div>
     </fieldset>
   <% end %>
