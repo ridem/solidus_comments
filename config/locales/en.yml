@@ -6,6 +6,7 @@ en:
     none: None
     comments: Comments
     commenter: Commenter
+    comment_type: Comment type
     comments_count: Comments (%{count})
     comment: Comment
     add_comment: Add Comment

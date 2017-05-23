@@ -4,4 +4,8 @@ class Spree::Admin::CommentsController < Spree::Admin::ResourceController
   def location_after_save
     :back
   end
+
+  def model_class
+    Spree::Order
+  end
 end
