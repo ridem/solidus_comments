@@ -5,7 +5,7 @@ class Spree::Admin::CommentsController < Spree::Admin::ResourceController
     :back
   end
 
-  def model_class
-    Spree::Order
-  end
+  # def model_class
+  #   Spree::Order
+  # end
 end
